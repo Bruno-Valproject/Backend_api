@@ -1,0 +1,52 @@
+{
+  "name": "backend_api",
+  "version": "1.0.0",
+  "description": "api express sequelize architecture multi tier",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --ext js src",
+    "lint:fix": "eslint . --ext .js --fix",
+    "prettier-watch": "onchange 'src/**/*.js' -- eslint . --ext .js --fix",
+    "start:dev": "nodemon -r dotenv/config ./src/index.js --exec babel-node",
+    "test": "jest",
+    "test:dev": "jest --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bruno-Valproject/Backend_api.git"
+  },
+  "keywords": [
+    "backend",
+    "api",
+    "express",
+    "sequelize"
+  ],
+  "author": "Bruno, Val",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bruno-Valproject/Backend_api/issues"
+  },
+  "homepage": "https://github.com/Bruno-Valproject/Backend_api#readme",
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/node": "^7.13.12",
+    "@babel/plugin-transform-runtime": "^7.13.10",
+    "@babel/preset-env": "^7.13.12",
+    "dotenv": "^8.2.0",
+    "eslint": "^7.22.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "jest": "^26.6.3",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.7",
+    "onchange": "^7.1.0",
+    "prettier": "^2.2.1",
+    "supertest": "^6.1.3"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.6.2",
+    "swagger-ui-express": "^4.1.6"
+  }
+}
