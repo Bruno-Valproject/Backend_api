@@ -18,7 +18,6 @@ class BookController {
     return response.json(books)
 
   }
-
   getAuthor() {
 
   }
